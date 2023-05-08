@@ -1,0 +1,250 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Pacifico&family=Special+Elite&family=Vina+Sans&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: url("https://images.unsplash.com/photo-1474540412665-1cdae210ae6b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1783&q=80") center center/cover;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/*Header*/
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 40px;
+  background-color: transparent;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99; 
+}
+
+.logo{
+  font-size: 2rem;
+  user-select:none ;
+  font-family: 'Macondo', cursive;
+  color: #162938;
+}
+
+.logo span{
+  border: 1px solid #162938;
+  border-radius: 30%;
+  padding: 4px;
+}
+
+.navigation{
+  display: flex;
+  flex-direction: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navigation a{
+  position: relative;
+  font-size: 1rem;
+  color: #162938;
+  font-weight: 600;
+  margin-left: 40px;
+  text-decoration: none;
+}
+
+.navigation a::after{
+  content: '' ;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 3px;
+  background: black;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: .3s;
+  transform-origin: left;
+}
+
+.navigation a:hover::after{
+  transform: scaleX(1);
+  background:black;
+}
+
+
+/* Main */
+
+.main-content{
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.concept-text{
+  width: 40%;
+  font-weight: 600;
+  font-size: 1.3rem;
+  backdrop-filter:  blur(1px) ;
+  color: floralwhite;
+}
+
+.wrapper{
+  position: relative;
+  width: 440px;
+  height: 440px;
+  border: 2px solid rgba(255, 255, 255, .5);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  backdrop-filter:  blur(10px) ;
+  box-shadow: 0 0 25px black;
+ }
+
+ .wrapper h2{
+  font-size: 2rem;
+  text-align: center;
+  color: #162938;
+}
+
+.wrapper .form-box{
+  width: 100%;
+  padding: 0 40px;
+  margin-top: 20px;
+}
+
+.wrapper .form-box .login-alert{
+  text-align: center;
+  color: rgb(255, 3, 3);
+  font-weight: 600;
+  padding: 2px;
+}
+
+.input-box{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid #162938;
+  margin: 30px 0;
+}
+
+.input-box label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: #162938;
+  font-weight: 700;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+  top: -6px;
+}
+
+.input-box input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #162938;
+  background: transparent;
+  border-radius: 5px;
+}
+
+.input-box #password{
+  padding: 0 0 0 95px;;
+}
+
+.input-box #email{
+  padding: 0 34px 0 95px;
+}
+
+.remember-forgot{
+  font-size: 1rem;
+  color: #162938;
+  font-weight: 500;
+  margin: -15px 0 15px ;
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember-forgot label input{
+  accent-color: #162938;
+  margin-right: 3px;
+  transform: translateY(2px);
+}
+
+.remember-forgot a{
+  text-decoration: none;
+  color: #162938;
+}
+
+.remember-forgot a:hover{
+  text-decoration: underline;
+}
+
+.btn {
+  width: 100%;
+  height: 45px;
+  background-color: #162938;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: white;
+  font-weight: 500;
+}
+
+.login-register{
+  font-size: 1rem;
+  color: #162938;
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 10px;
+}
+
+.login-register p a {
+  text-decoration: none;
+  color: #162938;
+  font-weight: 600;
+}
+
+.login-register p a:hover {
+  text-decoration: underline;
+}
+
+
+/* Footer */
+
+footer{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  padding: 30px;
+  background-color: transparent;
+  text-align: center;
+}
+
+footer p{
+  font-weight: 600;
+  color: #162938;
+}
+

@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@media only screen and (max-width:768px){
+ 
+  /* Header */
+
+  header{
+    padding: 20px 15px;
+  }
+
+  .logo{
+    font-size: 1.8rem;
+  }  
+ 
+
+ /* Form*/
+
+  .wrapper{
+    width: 260px;
+    height: 300px;
+  }
+  
+  .wrapper .form-box{
+    padding: 10px;
+  }
+   
+  .form-box h2{
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+  
+  .input-box{
+    margin: 20px 0;
+  }
+  
+  .input-box label{
+    font-size: 0.8rem;
+  }
+  
+  .input-box input:focus~label,
+  .input-box input:valid~label{
+    top: -2px;
+  }
+  
+  .input-box #email{
+    padding: 0 14px 0 65px;
+  }
+  
+  .btn {
+    height: 30px;   
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+
+}

@@ -1,0 +1,104 @@
+@charset "UTF-8";
+@media only screen and (max-width:768px){
+
+  .concept-text{
+    display: none;
+  }
+
+  /* Header */
+
+  header{
+    padding: 20px 15px;
+  }
+  
+  .logo{
+    font-size: 1.8rem;
+  }  
+
+  /*Form*/
+
+  .wrapper{
+    width: 260px;
+    height: 320px;
+  }
+
+  .wrapper h2{
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+
+  .wrapper .form-box{
+    padding: 0 20px;
+    margin-top: 0px;
+  }
+
+  .wrapper 
+  .form-box 
+  .login-alert{
+    text-align: center;
+    color: rgb(255, 3, 3);
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 2px;
+    margin-bottom: 20px;
+  }
+
+  .input-box{
+    height: 30px;
+    margin: 20px 0;
+  }
+
+  .input-box label{
+    font-size: 0.8rem;
+  }
+
+  .input-box input:focus~label,
+  .input-box input:valid~label{
+    top: -2px;
+  }
+
+  .input-box #password{
+    padding: 0 0 0 80px;;
+  }
+
+  .input-box #email{
+    padding: 0 2px 0 65px;
+  }
+
+  .remember-forgot{
+    font-size: 0.8rem;
+    margin-top: 20px  ;
+  }
+
+  .remember-forgot label input{
+    transform: translateY(2px);
+  }
+
+  .btn {
+    height: 30px;   
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+
+  .login-register{
+    font-size: 0.9rem;
+    margin: 15px 0 10px;
+  }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width:1024px){
+
+  .concept-text{
+    display: none;
+  }
+
+  .input-box #password{
+    padding: 0 0 0 100px;;
+  }
+  
+  .input-box #email{
+    padding: 0 34px 0 95px;
+  }
+
+}
