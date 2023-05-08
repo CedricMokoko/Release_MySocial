@@ -12,10 +12,10 @@
      <style><%@include file="/Css/register.css"%></style>
     <link rel="stylesheet"
     media=" only screen and (min-width: 769px) and (max-width:1024px)"
-    href="<%=request.getContextPath() %>/Css/register.mobile.css">
+    href="<%=request.getContextPath() %>//Css/register.mobile.css">
     <link rel="stylesheet"
     media="only screen and (max-width:768px)"
-    href="<%=request.getContextPath() %>/Css/register.mobile.css">
+    href="<%=request.getContextPath() %>//Css/register.mobile.css">
    <title>Homepage | Register </title>
   </head>
   <body>

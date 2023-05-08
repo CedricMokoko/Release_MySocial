@@ -37,9 +37,6 @@ public class UtenteDao implements InterfaceDao <Utente> {
 		manager.remove(ref);	
 	}
 	
-	/*Metodi per i controlli dei form Login e Register*/
-	
-	/*Utente Esistente?*/
 	
 	public List<Utente> findByUsernameRegisterForm(String username){
 		return manager.createQuery("SELECT u FROM Utente u WHERE u.username=:byUsername", Utente.class)

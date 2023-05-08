@@ -12,10 +12,10 @@
     <style><%@include file="/Css/login.css"%></style>
     <link rel="stylesheet"
     media=" only screen and (min-width: 769px) and (max-width:1024px)"
-    href="<%=request.getContextPath() %>/Css/login.mobile.css">
+    href="<%=request.getContextPath() %>//Css/login.mobile.css">
     <link rel="stylesheet"
     media="only screen and (max-width:768px)"
-    href="<%=request.getContextPath() %>/Css/login.mobile.css">
+    href="<%=request.getContextPath() %>//Css/login.mobile.css">
     <title>Homepage | Login </title>
   </head>
   <body>
@@ -43,11 +43,11 @@
            <div class="input-box">
              <input id="email" type="email" name="e" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
              title="Non puo contenere maiuscole e deve avere una almeno una @" 
-             <c:if test="${e!=null}">value="${e}"</c:if> required>
+             <c:if test="${ce!=null}">value="${ce}"</c:if> required>
              <label for="email"><span class="icon"><i class="fa-solid fa-envelope"></i></span> Email</label>
            </div>
            <div class="input-box">
-             <input id="password" type="password" name="p"  <c:if test="${p!=null}">value="${p}"</c:if> required>
+             <input id="password" type="password" name="p"  <c:if test="${cp!=null}">value="${cp}"</c:if> required>
              <label for="password"><span class="icon"><i class="fa-solid fa-lock"></i></span> Password</label>
            </div>
            <div class="remember-forgot"> 

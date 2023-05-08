@@ -27,7 +27,7 @@ public class InitServlet extends HttpServlet {
 			
 			getServletContext().setAttribute("BL",businessLogic);
 			System.out.println("Release");
-			businessLogic.inizializzazione("cédric", "cedricmokoko@gmail.com", "MBcv07451145.");	
+			businessLogic.inizializzazione("cedric", "cedricmokoko@gmail.com", "MBcv07451145.");	
 		}
 		catch (Exception e) {
 			e.printStackTrace();

@@ -12,7 +12,7 @@
     <style><%@include file="/Css/contact.css"%></style>
     <link rel="stylesheet"
     media="only screen and (max-width:768px)"
-    href="<%=request.getContextPath() %>/Css/contact.mobile.css">
+    href="<%=request.getContextPath() %>//Css/contact.mobile.css">
     <title> CONTACT | FORM </title>
   </head>
   <body>

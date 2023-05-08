@@ -11,10 +11,10 @@
     <style><%@include file="/Css/homepage.css"%></style>
     <link rel="stylesheet"
     media=" only screen and (min-width: 769px) and (max-width:1024px)"
-    href="<%=request.getContextPath() %>/Css/homepage.mobile.css">
+    href="<%=request.getContextPath() %>//Css/homepage.mobile.css">
     <link rel="stylesheet"
     media="only screen and (max-width:768px)"
-    href="<%=request.getContextPath() %>/Css/homepage.mobile.css">
+    href="<%=request.getContextPath() %>//Css/homepage.mobile.css">
     <title> HOMEPAGE | FEED</title>
   </head>
   <body>
@@ -61,12 +61,6 @@
                 <span class="text nav-text">Home</span>
               </a>
             </li>
-            <!-- <li class="nav-link">
-              <a href="#">
-                <i class="fa-regular fa-heart icon"></i>
-                <span class="text nav-text">Notications</span>
-              </a>
-            </li> -->
             <li class="nav-link">
               <a href="#">
                 <i class="fa-regular fa-square-plus icon"></i>
@@ -236,11 +230,6 @@
                   <i class="fa-solid fa-house icon"></i>
                 </a>
               </li>
-              <!-- <li class="nav-link">
-                <a href="#">
-                  <i class="fa-regular fa-heart icon"></i>
-                </a>
-              </li> -->
               <li class="nav-link">
                 <a href="#">
                   <i class="fa-regular fa-square-plus icon"></i>

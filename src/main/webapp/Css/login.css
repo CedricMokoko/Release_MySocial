@@ -117,13 +117,16 @@ header{
   color: #162938;
 }
 
-.wrapper .form-box{
+.wrapper 
+.form-box{
   width: 100%;
   padding: 0 40px;
   margin-top: 20px;
 }
 
-.wrapper .form-box .login-alert{
+.wrapper 
+.form-box 
+.login-alert{
   text-align: center;
   color: rgb(255, 3, 3);
   font-weight: 600;
