@@ -72,8 +72,8 @@ public class LoginServlet extends HttpServlet {
                    request.setAttribute("e", emailCookie.getValue());
                    request.setAttribute("p", passwordCookie.getValue());
                }
-        	   request.getRequestDispatcher("/Jsp/Private/homepage.jsp").forward(request, response);
         	   session.setAttribute("utente", u); 
+        	   request.getRequestDispatcher("/Jsp/Private/homepage.jsp").forward(request, response);
            }else {
               
         	   if (emailCookie != null) {
@@ -86,6 +86,9 @@ public class LoginServlet extends HttpServlet {
                }
                request.setAttribute("e", email);
                request.setAttribute("p", password);
+               
+               request.getRequestDispatcher("/Jsp/login.jsp").forward(request, response);
+               
              }
            
 		}

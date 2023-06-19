@@ -5,17 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Special+Elite&display=swap" rel="stylesheet">
-    <script
-      src="https://kit.fontawesome.com/462fa9c33e.js"
-      crossorigin="anonymous">
-    </script>
-     <style><%@include file="/Css/register.css"%></style>
+    <script src="https://kit.fontawesome.com/462fa9c33e.js" crossorigin="anonymous"></script>
+	<style><%@include file="/Css/register.css"%></style>
+	<link rel="stylesheet"
+	media=" only screen and (min-width:993px) and (max-width:1200px)"
+	href="<%=request.getContextPath() %>//Css/register.mobile.css">
     <link rel="stylesheet"
-    media=" only screen and (min-width: 769px) and (max-width:1024px)"
-    href="<%=request.getContextPath() %>//Css/register.mobile.css">
-    <link rel="stylesheet"
-    media="only screen and (max-width:768px)"
-    href="<%=request.getContextPath() %>//Css/register.mobile.css">
+	media=" only screen and (min-width:769px) and (max-width:992px)"
+	href="<%=request.getContextPath() %>//Css/register.mobile.css">
+	<link rel="stylesheet"
+	media=" only screen and (min-width:577px) and (max-width:768px)"
+	href="<%=request.getContextPath() %>//Css/register.mobile.css">
+	<link rel="stylesheet"
+	media="only screen and (max-width:576px)"
+	href="<%=request.getContextPath() %>//Css/register.mobile.css">
+	    
    <title>Homepage | Register </title>
   </head>
   <body>
@@ -53,11 +57,7 @@
              <label for="email"><span class="icon"><i class="fa-solid fa-envelope"></i></span> Email</label>
            </div>
            <div class="input-box">
-             <input id="password" type="password" name="p"
-             pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#\$%\^&\*\(\)_\+\-=\[\]{}\\|;':,\.\/>\?])(?!.*\s).{8,}$"  
-             title="Deve avere una lunghezza di almeno 8 caratteri e contenere almeno una lettera maiuscola,
-             una lettere minuscole, un numero e uno dei seguiti caratteri speciali [!@#\$%\^&\*\(\)_\+\-=\[\]{}\\|;':,\.\/>\?]"
-             <c:if test="${p!=null}">value="${p}"</c:if> required>
+             <input id="password" type="password" name="p" <c:if test="${p!=null}">value="${p}"</c:if> required>
              <label for="password"><span class="icon"><i class="fa-solid fa-lock"></i></span> Password</label>
            </div>
            <div class="input-box">
@@ -81,5 +81,6 @@
    <footer>
      <p>Copyright &COPY; 2023</p>
    </footer>  
+   <script><%@include file = "/Js/register.js"%></script>
  </body>
 </html>

@@ -1,0 +1,49 @@
+@charset "UTF-8";
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 9999;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.letter {
+  font-family: 'Macondo', cursive;
+  font-size: 40px;
+  font-weight: bold;
+  color: goldenrod;
+  margin: 0 10px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: animateLetter 2s ease-in-out infinite;
+}
+
+.letter span {
+  border: 4px solid goldenrod;
+  border-radius: 30%;
+  padding:0 4px;
+}
+
+@keyframes animateLetter {
+  0%, 90% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  10%, 80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}

@@ -6,47 +6,53 @@
   box-sizing: border-box;
 }
 
+:root{
+  --tran-02: all 0.2s ease ;
+  --tran-03: all 0.3s ease ;
+  --tran-04: all 0.4s ease ;
+  --tran-05: all 0.5s ease ;
+}
+
 body{
-  background: url("https://images.unsplash.com/photo-1474540412665-1cdae210ae6b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1783&q=80") center center/cover;
+  background: url("https://images.unsplash.com/photo-1508614823792-1f56af914148?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJhY2tncm91bmQlMjB5ZWxsb3d8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60") center center/cover;
   display: flex;
   justify-content: center;
   min-height: 100vh;
 }
 
-/*Header*/
-
+/* Header */
 header{
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  padding: 20px 40px;
+  width: 100vw;
+  padding: 20px 30px;
   background-color: transparent;
   display: flex;
-  flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   z-index: 99;
 }
 
 .logo{
-  font-size: 2rem;
+  font-size: 1.9rem;
   user-select:none ;
   font-family: 'Macondo', cursive;
   color: #162938;
+  transition: var(--tran-05);
 }
 
 .logo span{
   border: 1px solid #162938;
   border-radius: 30%;
   padding: 4px;
+  transition: var(--tran-05);
 }
 
 .navigation{
   display: flex;
   flex-direction: row nowrap;
   align-items: center;
-  justify-content: space-evenly;
 }
 
 .navigation a{
@@ -54,8 +60,9 @@ header{
   font-size: 1rem;
   color: #162938;
   font-weight: 600;
-  margin-left: 40px;
+  margin-left: 30px;
   text-decoration: none;
+  transition: var(--tran-05);
 }
 
 .navigation a::after{
@@ -77,29 +84,29 @@ header{
   background:black;
 }
 
-
 /* Main */
-
 .main-content{
   display: flex;
   flex-direction: row nowrap;
   justify-content: space-around;
   align-items: center;
   min-height: 100vh;
+  transition: var(--tran-05); 
 }
 
 .concept-text{
   width: 40%;
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   backdrop-filter:  blur(1px) ;
   color: floralwhite;
+  transition: var(--tran-05); 
 }
 
 .wrapper{
   position: relative;
-  width: 440px;
-  height: 560px;
+  width: 30vw;
+  height: 530px;
   border: 2px solid rgba(255, 255, 255, .5);
   border-radius: 20px;
   display: flex;
@@ -108,33 +115,33 @@ header{
   align-items: center;
   background: transparent;
   backdrop-filter:  blur(10px) ;
-   box-shadow: 0 0 25px black;
+  box-shadow: 1px 1px 10px black;
+  transition: var(--tran-02); 
 }
 
 .wrapper h2{
-  margin-bottom: 20px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
   color: #162938;
+  transition: var(--tran-05); 
 }
 
 .wrapper 
 .form-box{
   width: 100%;
-  padding: 0 40px;
-  margin: 0px;
+  padding: 0 20px;
+  margin-top: 20px;
+  transition: var(--tran-05); 
 }
 
 .form-box 
 .register-alert{
+  font-size: .8rem;
   text-align: center;
   color: rgb(223, 15, 15);
   font-weight: 600;
-  margin: 0;
-
-  
+  padding: 2px;
 }
-
 
 .input-box{
   position: relative;
@@ -166,25 +173,24 @@ header{
   height: 100%;
   border: none;
   outline: none;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #162938;
   background: transparent;
   border-radius: 5px;
 }
 
-.input-box #password{
-  padding: 0 0 0 95px;;
+.input-box #username{
+  padding: 0 2px 0 100px;
 }
 
 .input-box #email{
-  padding: 0 34px 0 95px;
+  padding: 0 2px 0 100px;
 }
 
-.input-box #username{
-  padding: 0 34px 0 105px;
+.input-box #password{
+  padding: 0 0 0 100px;;
 }
-
 
 .terms{
   font-size: 1rem;
@@ -192,12 +198,15 @@ header{
   font-weight: 500;
   margin: -8px 0 15px ;
   display: flex;
+  align-items: baseline;
   justify-content: space-between;
+  transition: var(--tran-05); 
 }
 
 .terms label input{
   accent-color: #162938;
   margin-right: 3px;
+  transform: translateY(2px);
 }
 
 .terms a{
@@ -216,6 +225,7 @@ header{
   font-size: 1rem;
   color: white;
   font-weight: 500;
+  transition: var(--tran-05); 
 }
 
 .login-register{
@@ -223,7 +233,8 @@ header{
   color: #162938;
   text-align: center;
   font-weight: 500;
-  margin: 15px 0 10px;
+  margin: 25px 0 10px;
+  transition: var(--tran-05); 
 }
 
 .login-register p a {
@@ -238,19 +249,20 @@ header{
 
 
 /* Footer */
-
 footer{
   position: fixed;
   bottom: 0;
   right: 0;
-  width: 100%;
-  padding: 30px;
+  width: 100vw;
+  padding-bottom: 20px; 
   background-color: transparent;
   text-align: center;
 }
 
 footer p{
+  font-size: 1rem;
   font-weight: 600;
   color: #162938;
+  transition: var(--tran-05); 
 }
 
