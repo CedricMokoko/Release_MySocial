@@ -24,7 +24,7 @@
   margin: 0 10px;
   opacity: 0;
   transform: translateY(30px);
-  animation: animateLetter 2s ease-in-out infinite;
+  animation: animateLetter 3s ease-in-out infinite;
 }
 
 .letter span {

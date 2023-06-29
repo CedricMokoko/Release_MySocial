@@ -5,6 +5,6 @@ document.onreadystatechange = function () {
   } else if (state == "complete") {
     setTimeout(function () {
       document.getElementById("preloader").style.visibility = "hidden";
-    }, 2000); // Imposta il tempo di visualizzazione del preloader
+    }, 3000); // Imposta il tempo di visualizzazione del preloader
   }
 };

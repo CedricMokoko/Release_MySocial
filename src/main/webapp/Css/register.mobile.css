@@ -1,25 +1,398 @@
 @charset "UTF-8";
 @media only screen and (max-width:576px){
-  .letter {
-    font-size: 28px;
+
+  .concept-text{
+    display: none;
+    transition: var(--tran-05); 
+  }
+
+  /* Header */
+  header{
+    padding: 20px;
+  }
+  
+  header 
+  .logo{
+    font-size: 1.5rem;
+  }  
+
+  .navigation a{
+  font-size: .9rem;
+  margin-left: 15px;
+  }
+
+  /* Main */
+  .wrapper{
+    width: 85vw;
+    height: 430px;
+  }
+
+  .wrapper h2{
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .wrapper .form-box{
+    padding: 0 15px;
+    margin-top: 0px;
+  }
+
+  .wrapper 
+  .form-box 
+  .register-alert{
+    font-size: 0.6rem;
+    margin-bottom: 20px;
+  }
+
+  .input-box{
+    height: 30px;
+    margin: 20px 0;
+  }
+
+  .input-box label{
+    font-size: 0.7rem;
+  }
+
+  .input-box input:focus~label,
+  .input-box input:valid~label{
+    top: -2px;
+  }
+
+  .input-box input{
+    font-size: 0.7rem;
+  }
+  
+  .input-box #username{
+    padding: 0 2px 0 75px;
+  }
+
+  .input-box #email{
+    padding: 0 2px 0 75px;
+  }
+
+  .input-box #password{
+    padding: 0 0 0 75px;;
+  }
+
+  .input-box #confirmPassword{
+    padding: 0 0 0 75px;;
+  }
+
+  .terms{
+    font-size: .7rem;
+  }
+
+  .remember-forgot{
+    font-size: 0.7rem;
+    margin-top: 20px  ;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+    height: 30px;   
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+
+  .login-register{
+    font-size: 0.7rem;
+    margin: 15px 0 10px;
+  }
+
+  /* Footer */
+  footer{
+    padding-bottom: 15px; 
+  }
+
+  footer p{
+    font-size: .8rem;
   }
 }
 
 @media only screen and (min-width: 577px) and (max-width:768px){
-  .letter {
-    font-size: 31px;
+
+  .concept-text{
+    display: none;
+    transition: var(--tran-05); 
+  }
+
+  /* Header */
+  header{
+    padding: 20px 25px;
+  }
+  
+  header 
+  .logo{
+    font-size: 1.6rem;
+  }  
+
+  .navigation a{
+  font-size: .95rem;
+  margin-left: 25px;
+  }
+
+  /* Main */
+  .wrapper{
+    width: 50vw;
+    height: 540px;
+  }
+
+  .wrapper h2{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .wrapper .form-box{
+    padding: 0 15px;
+    margin-top: 0px;
+  }
+
+  .wrapper 
+  .form-box 
+  .register-alert{
+    font-size: 0.7rem;
+    margin-bottom: 20px;
+  }
+
+  .input-box{
+    height: 40px;
+    margin: 30px 0;
+  }
+
+  .input-box label{
+    font-size: 0.8rem;
+  }
+
+  .input-box input:focus~label,
+  .input-box input:valid~label{
+    top: -2px;
+  }
+
+  .input-box input{
+    font-size: 0.8rem;
+  }
+  
+  .input-box #username{
+    padding: 0 2px 0 80px;
+  }
+
+  .input-box #email{
+    padding: 0 2px 0 80px;
+  }
+
+  .input-box #password{
+    padding: 0 0 0 80px;;
+  }
+
+  .input-box #confirmPassword{
+    padding: 0 0 0 80px;;
+  }
+
+
+  .remember-forgot{
+    font-size: 0.8rem;
+    margin-top: 20px  ;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+    height: 35px;   
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+
+  .login-register{
+    font-size: 0.8rem;
+    margin: 15px 0 10px;
+  }
+
+  /* Footer */
+  footer{
+    padding-bottom: 15px; 
+  }
+
+  footer p{
+    font-size: .9rem;
   }
 }
 
 @media only screen and (min-width: 769px) and (max-width:992px){
-  .letter {
-    font-size: 34px;
-  } 
+
+  /* Header */
+  header{
+    padding: 20px 27px;
+  }
+  
+  header 
+  .logo{
+    font-size: 1.7rem;
+  }  
+
+  .navigation a{
+  font-size: .95rem;
+  margin-left: 25px;
+  }
+
+  /* Main */
+  .concept-text{
+    font-size: 1.2rem;
+  }
+
+  .wrapper{
+    width: 40vw;
+  }
+
+  .wrapper h2{
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+
+  .wrapper .form-box{
+    padding: 0 15px;
+    margin-top: 0px;
+  }
+
+  .wrapper 
+  .form-box 
+  .register-alert{
+    font-size: .7rem;
+    margin-bottom: 20px;
+  }
+
+  .input-box{
+    height: 40px;
+    margin: 30px 0;
+  }
+
+  .input-box label{
+    font-size: 0.8rem;
+  }
+
+  .input-box input:focus~label,
+  .input-box input:valid~label{
+    top: -2px;
+  }
+
+  .input-box input{
+    font-size: 0.8rem;
+  }
+  
+  .input-box #username{
+    padding: 0 2px 0 80px;
+  }
+
+  .input-box #email{
+    padding: 0 2px 0 80px;
+  }
+
+  .input-box #password{
+    padding: 0 0 0 80px;;
+  }
+
+  .input-box #confirmPassword{
+    padding: 0 0 0 80px;;
+  }
+
+  .remember-forgot{
+    font-size: 0.85rem;
+    margin-top: 20px  ;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    height: 40px;   
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+
+  .login-register{
+    font-size: 0.85rem;
+    margin: 15px 0 10px;
+  }
 }
 
 @media only screen and (min-width: 993px) and (max-width:1200px){
-  .letter {
-    font-size: 37px;
+  
+  /* Header */
+  header 
+  .logo{
+    font-size: 1.8rem;
+  }  
+
+  /* Main */
+  .concept-text{
+    font-size: 1.3rem;
+  }
+  .wrapper{
+    width: 40vw;
+  }
+
+  .wrapper h2{
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  .wrapper .form-box{
+    padding: 0 15px;
+    margin-top: 0px;
+  }
+
+  .wrapper 
+  .form-box 
+  .register-alert{
+    font-size: .8rem;
+    margin-bottom: 20px;
+  }
+
+  .input-box{
+    height: 40px;
+    margin: 30px 0;
+  }
+
+  .input-box label{
+    font-size: 0.9rem;
+  }
+
+  .input-box input:focus~label,
+  .input-box input:valid~label{
+    top: -2px;
+  }
+
+  .input-box input{
+    font-size: 0.9rem;
+  }
+
+  .input-box #username{
+    padding: 0 2px 0 93px;
+  }
+
+  .input-box #email{
+    padding: 0 2px 0 93px;
+  }
+
+  .input-box #password{
+    padding: 0 0 0 93px;
+  }
+
+  .input-box #confirmPassword{
+    padding: 0 0 0 93px;
+  }
+
+  .remember-forgot{
+    font-size: 0.95rem;
+    margin-top: 20px  ;
+  }
+
+  .btn {
+    font-size: 1rem;
+    height: 43px;   
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+
+  .login-register{
+    font-size: 0.95rem;
+    margin: 15px 0 10px;
   }
 }
 

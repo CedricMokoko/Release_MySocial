@@ -106,7 +106,7 @@ header{
 .wrapper{
   position: relative;
   width: 30vw;
-  height: 530px;
+  height: 560px;
   border: 2px solid rgba(255, 255, 255, .5);
   border-radius: 20px;
   display: flex;
@@ -189,6 +189,10 @@ header{
 }
 
 .input-box #password{
+  padding: 0 0 0 100px;
+}
+
+.input-box #confirmPassword{
   padding: 0 0 0 100px;;
 }
 

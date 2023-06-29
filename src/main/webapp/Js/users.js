@@ -91,7 +91,3 @@ closeIcons.forEach(icon => {
     userContent.style.display = 'none';
   });
 });
-
-
-
-

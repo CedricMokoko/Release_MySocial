@@ -479,7 +479,7 @@
       </div>
 
       <!-- MOBILE FOOTER -->
-      <nav class="mobile-footer">
+       <nav class="mobile-footer">
         <div class="menu-bar">
           <li class="mode">
             <div class="toggle-switch2" title="Dark/Light Mode">
@@ -500,16 +500,16 @@
               </label>
             </ul>
           </div>
-           <a href="<%= request.getContextPath()+ "/logout"%>">
+          <div class="bottom-content" title="Logout">
            <li class="">
-              <a href="login.html">
+              <a href="<%= request.getContextPath()+ "/logout"%>">
                 <i class="fa-sharp fa-solid fa-arrow-right-to-bracket fa-rotate-180 icon"></i>
               </a>
            </li>
           </div>
         </div>
       </nav>
-    </section>  
+    </section> 
     <script><%@include file = "/Js/homepage.areaUtente.js"%></script>
     <script>
       PostOption();

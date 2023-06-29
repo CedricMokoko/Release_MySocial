@@ -41,3 +41,60 @@ loginForm.addEventListener('submit', function(event) {
 });
 
 
+/* 2-Cookies */
+
+// 2a-Funzione per impostare un cookie sicuro
+function setSecureCookie(name, value, days) {
+  let expires = '';
+  if (days) {
+    const date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    expires = "; expires=" + date.toUTCString();
+  }
+  const cookieValue = encodeURIComponent(value);
+  document.cookie = name + "=" + cookieValue + expires + "; secure; SameSite=Strict";
+}
+// 2b-Funzione per ottenere il valore di un cookie
+function getCookie(name) {
+  const nameEQ = name + "=";
+  const cookies = document.cookie.split(';');
+  for (let i = 0; i < cookies.length; i++) {
+    let cookie = cookies[i];
+    while (cookie.charAt(0) === ' ') {
+      cookie = cookie.substring(1, cookie.length);
+    }
+    if (cookie.indexOf(nameEQ) === 0) {
+      return decodeURIComponent(cookie.substring(nameEQ.length, cookie.length));
+    }
+  }
+  return null;
+}
+// 2c-Ottenere gli elementi del modulo
+const form = document.querySelector('form');
+const rememberCheckbox = document.getElementById('check');
+const emailInput = document.getElementById('email');
+// 2d-Verificare se è già impostato un cookie "remember"
+const rememberValue = getCookie('remember');
+const emailValue = getCookie('email');
+if (rememberValue === 'true') {
+  rememberCheckbox.checked = true;
+  // Inserire automaticamente l'email nel campo di accesso
+  emailInput.value = emailValue;
+}
+// 2e-Aggiungere un event listener per l'invio del modulo
+form.addEventListener('submit', function(event) {
+  // Ottenere il valore dell'email
+  const emailValue = emailInput.value;
+  // Verificare se la casella di controllo è selezionata
+  if (rememberCheckbox.checked) {
+    // Impostare un cookie "remember" con una durata di validità di 24 ore
+    setSecureCookie('remember', 'true', 1);
+    // Registrare anche l'email nel cookie
+    setSecureCookie('email', emailValue, 1);
+  } else {
+    // Eliminare il cookie "remember" impostando una data di scadenza nel passato
+    setSecureCookie('remember', '', -1);
+    // Eliminare anche il cookie dell'email
+    setSecureCookie('email', '', -1);
+  }
+});

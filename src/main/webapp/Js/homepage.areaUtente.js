@@ -228,10 +228,9 @@ function likeButton() {
   }
 }
 
-
 /** ONLY AREA UTENTE */
 
-/* 7- POST OPTIONS */
+/* 8- POST OPTIONS */
 function PostOption() {
   const cards = document.querySelectorAll('.card');
   cards.forEach((card) => {

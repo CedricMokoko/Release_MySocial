@@ -46,14 +46,11 @@
          <p class="register-alert"><c:out value="${MESSAGE}"></c:out></p>
          <form action="<%= request.getContextPath() + "/register"%>" method="post">
            <div class="input-box">
-             <input id="username" type="text" name="u" title="Solo caratteri alfanumerici minuscoli e trattini bassi, con lunghezza minima 3 e massima 16" 
-             pattern="^[a-z0-9_]{3,16}$" <c:if test="${u!=null}">value="${u}"</c:if> required>
+             <input id="username" type="text" name="u" autocomplete="off" <c:if test="${u!=null}">value="${u}"</c:if> required>
              <label for="username"><span class="icon"><i class="fa-solid fa-user"></i></span> Username</label>
            </div>
            <div class="input-box">
-             <input id="email" type="email" name="e"
-             pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Non puo contenere maiuscole e deve avere una almeno una @" 
-             <c:if test="${e!=null}">value="${e}"</c:if> required>
+             <input id="email" type="email" name="e" autocomplete="off" <c:if test="${e!=null}">value="${e}"</c:if> required>
              <label for="email"><span class="icon"><i class="fa-solid fa-envelope"></i></span> Email</label>
            </div>
            <div class="input-box">
@@ -61,7 +58,7 @@
              <label for="password"><span class="icon"><i class="fa-solid fa-lock"></i></span> Password</label>
            </div>
            <div class="input-box">
-             <input id="password" type="password" name="cp" <c:if test="${cp!=null && cp==p}">value="${p}"</c:if> required>
+             <input id="confirmPassword" type="password" name="cp" <c:if test="${cp!=null && cp==p}">value="${p}"</c:if> required>
              <label for="password"><span class="icon"><i class="fa-solid fa-lock"></i></span> Confirm Password</label>
            </div>
            <div class="terms">
